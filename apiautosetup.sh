@@ -19,29 +19,29 @@ then
 
     tput setaf 4; echo Currently Creating a Settings file...
     tput setaf 7; touch  CAM2Camera/API/settings_local.py
-    echo '# Django settings for NetworkCamerasAPI project.' > CAM2Camera/API/settings_local.py
-    echo 'import os' > CAM2Camera/API/settings_local.py
-    echo 'print("""Imported Local Settings......""")' > CAM2Camera/API/settings_local.py
-    echo 'SECRET_KEY = "'"$api"'"' > CAM2Camera/API/settings_local.py
-    echo 'ALLOWED_HOSTS = ["'"*"'"]' > CAM2Camera/API/settings_local.py
-    echo 'SECURE_PROXY_SSL_HEADER = ("'"HTTP_X_FORWARDED_PROTO"'", "'"https"'")' > CAM2Camera/API/settings_local.py
-    echo 'BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))' > CAM2Camera/API/settings_local.py
-    echo 'STATIC_ROOT = "'"staticfiles"'"' > CAM2Camera/API/settings_local.py
-    echo 'STATIC_URL = ''"'"/static/"'"' > CAM2Camera/API/settings_local.py
-    echo 'STATIC_DIRS = (' > CAM2Camera/API/settings_local.py
-    echo '    os.path.join(BASE_DIR, "'"static"'"),' > CAM2Camera/API/settings_local.py
-    echo '    )' > CAM2Camera/API/settings_local.py
-    echo 'DATABASES = {' > CAM2Camera/API/settings_local.py
-    echo '    "'"default"'": {' > CAM2Camera/API/settings_local.py
-    echo '        "'"ENGINE"'": "'"django.contrib.gis.db.backends.postgis"'",' > CAM2Camera/API/settings_local.py
-    echo '        "'"NAME"'": "'"cam2api"'",' > CAM2Camera/API/settings_local.py
-    echo '        "'"USER"'": "'"cam2api"'",' > CAM2Camera/API/settings_local.py
-    echo '        "'"PASSWORD"'": "'"123456"'",' > CAM2Camera/API/settings_local.py
-    echo '        "'"HOST"'": "'"localhost"'",' > CAM2Camera/API/settings_local.py
-    echo '        "'"PORT"'": "'""'",' > CAM2Camera/API/settings_local.py
-    echo '    }' > CAM2Camera/API/settings_local.py
-    echo '}' > CAM2Camera/API/settings_local.py
-    echo 'DEBUG = True' > CAM2Camera/API/settings_local.py
+    echo '# Django settings for NetworkCamerasAPI project.' >> CAM2Camera/API/settings_local.py
+    echo 'import os' >> CAM2Camera/API/settings_local.py
+    echo 'print("""Imported Local Settings......""")' >> CAM2Camera/API/settings_local.py
+    echo 'SECRET_KEY = "'"$api"'"' >> CAM2Camera/API/settings_local.py
+    echo 'ALLOWED_HOSTS = ["'"*"'"]' >> CAM2Camera/API/settings_local.py
+    echo 'SECURE_PROXY_SSL_HEADER = ("'"HTTP_X_FORWARDED_PROTO"'", "'"https"'")' >> CAM2Camera/API/settings_local.py
+    echo 'BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))' >> CAM2Camera/API/settings_local.py
+    echo 'STATIC_ROOT = "'"staticfiles"'"' >> CAM2Camera/API/settings_local.py
+    echo 'STATIC_URL = ''"'"/static/"'"' >> CAM2Camera/API/settings_local.py
+    echo 'STATIC_DIRS = (' >> CAM2Camera/API/settings_local.py
+    echo '    os.path.join(BASE_DIR, "'"static"'"),' >> CAM2Camera/API/settings_local.py
+    echo '    )' >> CAM2Camera/API/settings_local.py
+    echo 'DATABASES = {' >> CAM2Camera/API/settings_local.py
+    echo '    "'"default"'": {' >> CAM2Camera/API/settings_local.py
+    echo '        "'"ENGINE"'": "'"django.contrib.gis.db.backends.postgis"'",' >> CAM2Camera/API/settings_local.py
+    echo '        "'"NAME"'": "'"cam2api"'",' >> CAM2Camera/API/settings_local.py
+    echo '        "'"USER"'": "'"cam2api"'",' >> CAM2Camera/API/settings_local.py
+    echo '        "'"PASSWORD"'": "'"123456"'",' >> CAM2Camera/API/settings_local.py
+    echo '        "'"HOST"'": "'"localhost"'",' >> CAM2Camera/API/settings_local.py
+    echo '        "'"PORT"'": "'""'",' >> CAM2Camera/API/settings_local.py
+    echo '    }' >> CAM2Camera/API/settings_local.py
+    echo '}' >> CAM2Camera/API/settings_local.py
+    echo 'DEBUG = True' >> CAM2Camera/API/settings_local.py
 
     tput setaf 4; echo Currently Installing API Dependancies...
     tput setaf 7; sudo apt-get install -y python-dev libpq-dev postgresql postgresql-contrib postgis python3-pip python3-venv
