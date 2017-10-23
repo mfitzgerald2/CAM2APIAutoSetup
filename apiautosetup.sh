@@ -1,6 +1,9 @@
 #!/bin/bash
 # Script to automate the installation of the CAM2 Camera API
 # Author: Matthew Fitzgerald
+
+set -e
+
 echo This script will automatically install the CAM2 API to your development environment
 echo 
 echo This script is being ran by $USER on $HOSTNAME.
