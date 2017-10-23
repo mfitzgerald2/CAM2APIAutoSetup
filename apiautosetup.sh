@@ -60,7 +60,7 @@ then
     tput setaf 7; python3 –m venv cam2apivenv
     source cam2apivenv/bin/activate
     pip install --upgrade pip
-    cd cam2api
+    cd Cam2Camera
     pip install –r requirements.txt
 
     tput setaf 4; echo Currently Starting Server...
