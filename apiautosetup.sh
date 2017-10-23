@@ -41,7 +41,7 @@ then
     echo $"        'USER': 'cam2api'," >> CAM2Camera/API/settings_local.py
     echo $"        'PASSWORD': '123456'," >> CAM2Camera/API/settings_local.py
     echo $"        'HOST': 'localhost'," >> CAM2Camera/API/settings_local.py
-    echo $"        'PORT': '," >> CAM2Camera/API/settings_local.py
+    echo $"        'PORT': ''," >> CAM2Camera/API/settings_local.py
     echo $"    }" >> CAM2Camera/API/settings_local.py
     echo $"}" >> CAM2Camera/API/settings_local.py
     echo $"DEBUG = True" >> CAM2Camera/API/settings_local.py
