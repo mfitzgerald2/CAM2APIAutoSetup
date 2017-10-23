@@ -15,10 +15,10 @@ then
     tput setaf 7; sudo apt-get install -y git 
 
     tput setaf 4; echo Currently Cloning the most current version of the repository...
-    tput setaf 7;  git clone https://github.com/PurdueCam2ProjectCAM2Camera
+    tput setaf 7;  git clone https://github.com/PurdueCam2Project/CAM2Camera
 
     tput setaf 4; echo Currently Cloning the most current version of the repository...
-    tput setaf 7;  git clone https://github.com/PurdueCam2ProjectCAM2Camera
+    tput setaf 7;  git clone https://github.com/PurdueCam2Project/CAM2Camera
 
     tput setaf 4; echo Currently Creating a Settings file...
     tput setaf 7; touch  CAM2Camera/API/settings_local.py
