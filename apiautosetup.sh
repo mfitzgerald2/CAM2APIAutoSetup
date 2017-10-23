@@ -52,18 +52,16 @@ then
     tput setaf 4; echo Currently Configuring Database...
     tput setaf 7; sudo su - postgres
     sleep 1m
-    psql
-    CREATE DATABASE cam2api;
-    CREATE USER cam2api WITH PASSWORD "123456";
-    GRANT ALL PRIVILEGES ON DATABASE cam2api TO cam2api;
-    \connect cam2api;
-    CREATE EXTENSION postgis;
-    \q
+    psql CREATE DATABASE cam2api;
+    psql CREATE USER cam2api WITH PASSWORD "123456";
+    psql GRANT ALL PRIVILEGES ON DATABASE cam2api TO cam2api;
+    psql \connect cam2api;
+    psql CREATE EXTENSION postgis;
+    psql \q
     exit
 
     tput setaf 4; echo Currently Creating Virtual Environment cam2apivenv...
-    tput setaf 7; sudo su - postgres
-    python3 –m venv cam2apivenv
+    tput setaf 7; python3 –m venv cam2apivenv
     source cam2apivenv/bin/activate
     pip install --upgrade pip
     cd cam2api
