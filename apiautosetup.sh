@@ -50,15 +50,13 @@ then
     tput setaf 7; sudo apt-get install -y python-dev libpq-dev postgresql postgresql-contrib postgis python3-pip python3-venv
 
     tput setaf 4; echo Currently Configuring Database...
-    tput setaf 7; sudo su - postgres
-    sleep 1m
-    psql CREATE DATABASE cam2api;
-    psql CREATE USER cam2api WITH PASSWORD "123456";
-    psql GRANT ALL PRIVILEGES ON DATABASE cam2api TO cam2api;
-    psql \connect cam2api;
-    psql CREATE EXTENSION postgis;
-    psql \q
-    exit
+    tput setaf 7; sudo -su postgres psql CREATE DATABASE cam2api;
+    sudo -su postgres psql CREATE USER cam2api WITH PASSWORD "123456";
+    sudo -su postgres psql GRANT ALL PRIVILEGES ON DATABASE cam2api TO cam2api;
+    sudo -su postgres psql \connect cam2api;
+    sudo -su postgres psql CREATE EXTENSION postgis;
+    sudo -su postgres psql \q
+    sudo -su postgres exit
 
     tput setaf 4; echo Currently Creating Virtual Environment cam2apivenv...
     tput setaf 7; python3 –m venv cam2apivenv
